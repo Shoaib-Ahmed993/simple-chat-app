@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Application</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.21.0/firebase-database.js"></script>
+    <script>
+        var firebaseConfig = {
+            apiKey: "AIzaSyCKyTIR3aQslU_KO5K8ZKA_h2J1PgeKoWQ",
+            authDomain: "saylani-projects-333a9.firebaseapp.com",
+            databaseURL: "https://saylani-projects-333a9.firebaseio.com",
+            projectId: "saylani-projects-333a9",
+            storageBucket: "saylani-projects-333a9.appspot.com",
+            messagingSenderId: "84803909500",
+            appId: "1:84803909500:web:7f19ee3ac3f76da63b56f9",
+            measurementId: "G-HF4D2J5K0T"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+</head>
+
+<body>
+
+    <h1>Chat Application</h1>
+    <div>
+        <form onsubmit="return sendMessage()">
+            <input type="text" id="message" placeholder="Enter message" autocomplete="off">
+            <button id="btnsubmit">submit</button>
+        </form>
+    </div>
+    <div>
+        <ul id="messages">
+
+        </ul>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
